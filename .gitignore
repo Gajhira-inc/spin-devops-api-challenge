@@ -1,0 +1,49 @@
+# Terraform state, provider downloads and local/account configuration
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.auto.tfvars.json
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+# Local Python/editor artifacts
+__pycache__/
+.venv/
+.DS_Store
+# Dependency lockfiles and examples remain versioned.
+
+# Application local configuration, databases and caches
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite*
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local-only documents and artifacts.
+/private-delivery/
+
+/benchmark-results/
+/terraform/
+/helm/
+/promts/
+/.github/
+/.tflint.hcl
+/scripts/
+/RUNBOOK.md
+/TODO.md
+/DEPLOYMENT_CHECKLIST.md
+/README_DOCKER_COMPOSE.md
+/docs/*
+!/docs/reviewer/
+/fastAPI/CONTAINER_DELIVERY.md
+/fastAPI/VALIDATION.md
+/fastAPI/trivy-container-scan.txt
+/fastAPI/sql/
